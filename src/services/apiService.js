@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create axios instance with base configuration
 const API = axios.create({
-    baseURL: 'https://localhost:7052/api',
+    baseURL: 'https://edusyncbackend-f5gjenfagre6e4gp.centralindia-01.azurewebsites.net//api',
     timeout: 10000, // 10 seconds timeout
     headers: {
         'Content-Type': 'application/json',
