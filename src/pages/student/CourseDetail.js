@@ -85,8 +85,7 @@ function CourseDetail() {
                     <div className="card shadow-sm">
                         <div className="card-body">
                             {course.mediaUrl ? (
-
-<div className="ratio ratio-16x9"> {course.mediaUrl.includes('youtube.com') || course.mediaUrl.includes('youtu.be') ? ( <iframe className="rounded" src={ course.mediaUrl.includes('playlist?') ? course.mediaUrl.replace('playlist?', 'embed/videoseries?') : course.mediaUrl.replace('/watch?v=', '/embed/') } title="YouTube Playlist" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen ></iframe> ) : ( <video className="rounded" controls> <source src={course.mediaUrl} type="video/mp4" /> Your browser does not support the video tag. </video> )} </div> ) : ( <div className="alert alert-warning text-center"> <i className="bi bi-exclamation-triangle me-2"></i> No media available for this course. </div> )}
+                                <div className="ratio ratio-16x9">{course.mediaUrl.includes('youtube.com') || course.mediaUrl.includes('youtu.be') ? ( <iframe className="rounded" src={ course.mediaUrl.includes('playlist?') ? course.mediaUrl.replace('playlist?', 'embed/videoseries?') : course.mediaUrl.replace('/watch?v=', '/embed/') } title="YouTube Playlist" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen ></iframe> ) : ( <video className="rounded" controls> <source src={course.mediaUrl} type="video/mp4" /> Your browser does not support the video tag. </video> )} </div> ) : ( <div className="alert alert-warning text-center"> <i className="bi bi-exclamation-triangle me-2"></i> No media available for this course. </div> )}
                             )}
                         </div>
                     </div>
